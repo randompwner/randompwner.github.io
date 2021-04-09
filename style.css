@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    color: rgb(164, 154, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+
+main {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+a:link, a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+  fill: rgb(164, 154, 255);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
