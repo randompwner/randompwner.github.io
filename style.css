@@ -1,6 +1,6 @@
 html, body {
     margin: 0;
-    color: rgb(164, 154, 255);
+    color: rgb(176,169,153);
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
     background-color: rgb(27, 27, 27);
 }
@@ -39,6 +39,6 @@ a:link, a:visited {
 svg {
   width: 2rem;
   height: 2rem;
-  fill: rgb(164, 154, 255);
+  fill: rgb(176,169,153);
   padding-right: 2rem;
 }
