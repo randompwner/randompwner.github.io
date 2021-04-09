@@ -8,9 +8,10 @@ html, body {
 main {
   display: flex;
   height: 80vh;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
+  margin-left:20vw;
 }
 
 h1 {
@@ -39,6 +40,5 @@ svg {
   width: 2rem;
   height: 2rem;
   fill: rgb(164, 154, 255);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
