@@ -1,8 +1,28 @@
-html, body {
-    margin: 0;
-    color: rgba(80%,93.3%,100%,1);
-    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
-    background-color: rgb(27, 27, 27);
+:root {
+  --bg: rgb(40, 40, 40);
+  --fg: rgba(98.4%,94.5%,78.00%,1.000);
+  --a-link: rgba(95.00%, 50.00%, 59.00%,1.000);
+  --hl-text: rgba(0.00%,30.38%,42.50%,0.250);
+}
+
+::selection {
+  background: var(--hl-text);
+}
+::-moz-selection {
+  background: var(--hl-text);
+}
+
+html {
+  font-size: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Red Hat Text', serif;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  background-color: var(--bg);
+  font-size: 1.4rem;
+  color: var(--fg);
 }
 
 main {
@@ -17,14 +37,22 @@ main {
 h1 {
   font-size: 3rem;
   margin: 0;
+  font-weight: bold;
 }
 
-h3 {
-  font-size: 2rem;
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--fg);
+  font-weight: 400;
 }
 
 ul {
-  padding: 0;
+  list-style-position: inside;
+list-style-type: none;
+padding: 0;
 }
 
 li {
@@ -33,12 +61,25 @@ li {
 
 a:link, a:visited {
   text-decoration: inherit;
-  color: inherit;
+  color: var(--a-link);
+}
+
+.content {
+  position: relative;
+  margin-top: 13%;
+  margin-bottom: 10%;
+  width: 60%;
+  margin-left: 20vw;
+  margin-right: auto;
+  text-align: left;
+  background-color: var(--bg);
+  padding: 2rem;
+  border-radius: 0.4rem;
 }
 
 svg {
   width: 3rem;
   height: 3rem;
-  fill: rgba(80%,93.3%,100%,1);
+  fill: var(--a-link);
   padding-right: 2rem;
 }
