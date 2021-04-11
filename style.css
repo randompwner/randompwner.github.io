@@ -5,6 +5,7 @@
   --h1: rgba(98.00%,82.00%,48.00%,1.000);
   --subtitle: rgba(56.08%,74.90%,86.27%,1.000);
   --bullet: rgba(77.65%,71.37%,93.33%,1.000);
+  --a-hl: rgba(51.12%,49.60%,49.08%,0.250);
 }
 
 ::selection {
@@ -61,6 +62,9 @@ ul {
 a:link, a:visited {
   text-decoration: inherit;
   color: var(--a-link);
+}
+a:hover {
+  background-color: var(--a-hl);
 }
 
 .content {
