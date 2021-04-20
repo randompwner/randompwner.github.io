@@ -1,11 +1,15 @@
+/*
+  CSS heavily taken from mizlan (https://github.com/mizlan/mizlan.github.io/blob/main/style.css)
+*/
 :root {
-  --bg: rgba(8.00%,8.00%,8.00%,1.000);
-  --a-link: rgba(60.00%, 67.84%, 41.57%,1.000);
-  --hl-text: rgba(0.00%,30.38%,42.50%,0.250);
-  --h1: rgba(98.00%,82.00%,48.00%,1.000);
-  --subtitle: rgba(56.08%,74.90%,86.27%,1.000);
-  --bullet: rgba(77.65%,71.37%,93.33%,1.000);
-  --a-hl: rgba(51.12%,49.60%,49.08%,0.250);
+  /* Color scheme inspired by vim-pink-moon (https://github.com/sts10/vim-pink-moon) */
+  --bg: #2a2e38;
+  --a-link: #6F98B3;
+  --hl-text: #a6b8cc46;
+  --h1: #D08785;
+  --subtitle: #FCDBD9;
+  --bullet: #F0FDFF;
+  --a-hl: #5d5c6440;
 }
 
 ::selection {
@@ -17,28 +21,19 @@
 
 html {
   font-size: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Red Hat Text', serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Oxygen Mono', monospace;
 }
 
 body {
   margin: 0;
   position: relative;
   background-color: var(--bg);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--subtitle);
 }
 
-main {
-  display: flex;
-  height: 80vh;
-  align-items: left;
-  justify-content: center;
-  flex-direction: column;
-  margin-left:20vw;
-}
-
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 0;
   color: var(--h1);
 }
@@ -48,14 +43,16 @@ h1 {
   margin-bottom: 0;
   font-size: 1.4rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 ul {
   list-style-position: inside;
   list-style-type: none;
-  padding: 0;
-  margin-left: 5vmin;
+  padding-left: 10;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--bullet);
 }
 
@@ -70,12 +67,25 @@ a:hover {
 .content {
   position: relative;
   margin-top: 13%;
-  margin-bottom: 10%;
-  width: 60%;
-  margin-left: 20vw;
+  width: 40%;
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
   background-color: var(--bg);
   padding: 2rem;
-  border-radius: 0.4rem;
+}
+
+@media only screen and (max-width: 40rem) {
+  .content {
+    /* text-align: center; */
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  /* no need for bongo adjustments yet */
+  .bongo {
+    display: none;
+  }
 }
